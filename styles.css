@@ -385,6 +385,33 @@ nav a:hover, nav a.active {
 .form-group textarea { resize: vertical; min-height: 130px; }
 .hidden { display: none; }
 
+/* --- Rebate Banner --- */
+.rebate-banner {
+  background: var(--green);
+  color: #fff;
+  padding: 0.85rem 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+.rebate-banner a { color: #fff; font-weight: 700; text-decoration: underline; }
+.rebate-banner a:hover { color: var(--cream-dark); }
+
+/* --- Feature List --- */
+.feature-list { list-style: none; margin: 0.75rem 0 1rem; }
+.feature-list li { padding: 0.35rem 0; border-bottom: 1px solid var(--cream-dark); font-size: 0.93rem; color: var(--text-mid); }
+
+/* --- Rebate Card --- */
+.rebate-card {
+  background: #fff;
+  border-left: 5px solid var(--green);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.rebate-card p { color: var(--text-mid); margin-bottom: 0.75rem; }
+
 /* --- Footer --- */
 .site-footer {
   background: var(--brown-dark);
