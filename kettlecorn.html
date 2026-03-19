@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kettle Corn – Mikjaw Kettle Corn</title>
+  <meta name="description" content="Hand-popped kettle corn for events, delivery, and shipping across Kansas. See upcoming events, gallery, nutrition facts, and how to order from Mikjaw Kettle Corn in Wichita.">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -20,6 +21,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="kettlecorn.html" class="active">Kettle Corn</a></li>
           <li><a href="rainbarrels.html">Rain Barrels</a></li>
+          <li><a href="news.html">News</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -45,12 +47,27 @@
           <p>Kettle corn fills the air with a delicious, appetizing aroma. We can pop on-site or bring pre-popped bags. <a href="contact.html">Contact us</a> to book us for your event!</p>
         </div>
         <div>
-          <h2>Ordering Bags</h2>
-          <p>Want bags delivered? We've got you covered:</p>
+          <h2>Bag Sizes &amp; Pricing</h2>
+          <p>We use premium <a href="https://polybagllc.com/collections/hand-popped-kettle-corn-bags" target="_blank">Poly Bag LLC</a> kettle corn bags:</p>
+          <table class="event-table" style="margin-bottom: 1.5rem;">
+            <thead><tr><th>Size</th><th>Bag Dimensions</th><th>Price</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Size">Small</td><td data-label="Dimensions">8.5″ × 12″</td><td data-label="Price">$5</td></tr>
+              <tr><td data-label="Size">Medium</td><td data-label="Dimensions">8.5″ × 18″</td><td data-label="Price">$8</td></tr>
+              <tr><td data-label="Size">Large</td><td data-label="Dimensions">8.5″ × 24″</td><td data-label="Price">$10</td></tr>
+            </tbody>
+          </table>
+          <h2>How to Order</h2>
+          <ol class="order-steps">
+            <li><strong>Send us a message</strong> — use the <a href="contact.html">contact form</a> and let us know what size and quantity you'd like.</li>
+            <li><strong>We'll respond personally</strong> — we confirm your order and work out the best delivery method for you.</li>
+            <li><strong>Pay your way</strong> — we accept Square (remotely or on-site) or cash. Easy and flexible.</li>
+          </ol>
+          <p><strong>Delivery options:</strong></p>
           <ul class="delivery-list">
-            <li><strong>🚲 Near our home</strong> — Free bicycle delivery</li>
-            <li><strong>🚗 Within Wichita</strong> — Car delivery for a small distance-based fee</li>
-            <li><strong>📦 Anywhere in Kansas</strong> — We'll ship it to you</li>
+            <li>🚲 Near our home — Free bicycle delivery</li>
+            <li>🚗 Within Wichita — Car delivery for a small distance-based fee</li>
+            <li>📦 Anywhere in Kansas — We'll ship it to you</li>
           </ul>
           <p><em>Delivery outside Kansas is not available at this time.</em></p>
           <a href="contact.html" class="btn btn-primary">Place an Order</a>
@@ -134,7 +151,7 @@
 
   <section class="content-section content-section--alt">
     <div class="container">
-      <h2 class="section-title">Upcoming Events</h2>
+      <h2 class="section-title" id="upcoming">Upcoming Events</h2>
       <div class="event-table-wrap">
         <table class="event-table">
           <thead>
@@ -197,11 +214,13 @@
   </section>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Mikjaw Heavy Industries LLC, DBA Mikjaw Kettle Corn. All rights reserved.</p>
+    <p><span id="copy-year"></span> Mikjaw Heavy Industries LLC, DBA Mikjaw Kettle Corn. All rights reserved.</p>
     <p>Wichita, Kansas &mdash; delivering within Kansas</p>
+    <p><a href="https://www.facebook.com/people/Mikjaws-Kettle-Corn/61580975832436/" target="_blank" style="color: var(--cream-dark); text-decoration: underline;">Follow us on Facebook</a></p>
   </footer>
 
   <script src="nav.js"></script>
   <script src="lightbox.js"></script>
+  <script>document.getElementById('copy-year').textContent = '© ' + new Date().getFullYear();</script>
 </body>
 </html>

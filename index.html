@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mikjaw Kettle Corn – Handcrafted in Wichita, KS</title>
+  <meta name="description" content="Mikjaw Kettle Corn — handcrafted kettle corn and rain barrels from Wichita, Kansas. Fresh-popped, all-natural, and available for events, delivery, and shipping across Kansas.">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -20,6 +21,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="kettlecorn.html">Kettle Corn</a></li>
           <li><a href="rainbarrels.html">Rain Barrels</a></li>
+          <li><a href="news.html">News</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -65,6 +67,15 @@
     </div>
   </section>
 
+  <section class="next-event-strip">
+    <div class="container">
+      <span class="next-event-label">🌽 Next Event:</span>
+      <span class="next-event-name">Great Plains Renaissance Festival</span>
+      <span class="next-event-date">April 18–19, 2026 · Wichita, KS</span>
+      <a href="kettlecorn.html#upcoming" class="next-event-link">See all events →</a>
+    </div>
+  </section>
+
   <section class="products-preview">
     <div class="container">
       <h2 class="section-title">What We Make</h2>
@@ -107,10 +118,12 @@
   </section>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Mikjaw Heavy Industries LLC, DBA Mikjaw Kettle Corn. All rights reserved.</p>
+    <p><span id="copy-year"></span> Mikjaw Heavy Industries LLC, DBA Mikjaw Kettle Corn. All rights reserved.</p>
     <p>Wichita, Kansas &mdash; delivering within Kansas</p>
+    <p><a href="https://www.facebook.com/people/Mikjaws-Kettle-Corn/61580975832436/" target="_blank" style="color: var(--cream-dark); text-decoration: underline;">Follow us on Facebook</a></p>
   </footer>
 
   <script src="nav.js"></script>
+  <script>document.getElementById('copy-year').textContent = '© ' + new Date().getFullYear();</script>
 </body>
 </html>

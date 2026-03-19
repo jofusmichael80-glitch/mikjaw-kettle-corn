@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us – Mikjaw Kettle Corn</title>
+  <meta name="description" content="Contact Mikjaw Kettle Corn to order kettle corn, book us for your event, or inquire about rain barrels. We're based in Wichita, Kansas and respond personally to every message.">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -20,6 +21,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="kettlecorn.html">Kettle Corn</a></li>
           <li><a href="rainbarrels.html">Rain Barrels</a></li>
+          <li><a href="news.html">News</a></li>
           <li><a href="contact.html" class="active">Contact Us</a></li>
         </ul>
       </nav>
@@ -50,7 +52,7 @@
 
         <div class="contact-form-wrap">
           <!-- Netlify form handling -->
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" action="/thanks">
             <input type="hidden" name="form-name" value="contact">
             <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
 
@@ -89,10 +91,12 @@
   </section>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Mikjaw Heavy Industries LLC, DBA Mikjaw Kettle Corn. All rights reserved.</p>
+    <p><span id="copy-year"></span> Mikjaw Heavy Industries LLC, DBA Mikjaw Kettle Corn. All rights reserved.</p>
     <p>Wichita, Kansas &mdash; delivering within Kansas</p>
+    <p><a href="https://www.facebook.com/people/Mikjaws-Kettle-Corn/61580975832436/" target="_blank" style="color: var(--cream-dark); text-decoration: underline;">Follow us on Facebook</a></p>
   </footer>
 
   <script src="nav.js"></script>
+  <script>document.getElementById('copy-year').textContent = '© ' + new Date().getFullYear();</script>
 </body>
 </html>

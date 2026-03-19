@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News and updates from Mikjaw Kettle Corn — event announcements, new products, and more from Wichita, Kansas.">
+  <title>News – Mikjaw Kettle Corn</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-main">Mikjaw</span>
+        <span class="logo-sub">Kettle Corn &amp; Rain Barrels</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kettlecorn.html">Kettle Corn</a></li>
+          <li><a href="rainbarrels.html">Rain Barrels</a></li>
+          <li><a href="news.html" class="active">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="page-hero page-hero--news">
+    <div class="page-hero-content">
+      <h1>News &amp; Updates</h1>
+      <p>What's happening at Mikjaw Kettle Corn.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="news-feed">
+
+        <article class="news-post">
+          <div class="news-post-header">
+            <div class="news-post-date">March 19, 2026</div>
+            <h2 class="news-post-title">Welcome to Our New Website</h2>
+          </div>
+          <div class="news-post-body">
+            <p>We've launched a brand new website! It's faster, easier to navigate, and works great on your phone. You can browse our kettle corn and rain barrel offerings, check our upcoming event schedule, and get in touch with us directly. We'll be posting updates here as the season gets going — stay tuned!</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="copy-year">2026</span> Mikjaw Heavy Industries LLC, DBA Mikjaw Kettle Corn. All rights reserved.</p>
+    <p>Wichita, Kansas &mdash; delivering within Kansas</p>
+    <p><a href="https://www.facebook.com/people/Mikjaws-Kettle-Corn/61580975832436/" target="_blank" rel="noopener">Follow us on Facebook</a></p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>document.getElementById('copy-year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

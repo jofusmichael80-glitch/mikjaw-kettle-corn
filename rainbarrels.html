@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rain Barrels – Mikjaw Kettle Corn</title>
+  <meta name="description" content="Handmade 55-gallon HDPE rain barrels from Wichita, KS. $100 — eligible for a $100 city rebate in Wichita and Derby. UV-resistant, algae-resistant, includes all fittings.">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -20,6 +21,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="kettlecorn.html">Kettle Corn</a></li>
           <li><a href="rainbarrels.html" class="active">Rain Barrels</a></li>
+          <li><a href="news.html">News</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -30,7 +32,7 @@
   <section class="page-hero page-hero--barrel">
     <div class="page-hero-content">
       <h1>55-Gallon Rain Barrels</h1>
-      <p>Handmade in Wichita. $100 — eligible for a $100 city rebate.</p>
+      <p>Handmade in Wichita. <strong>$100</strong> — and with the city rebate, yours could be free.</p>
     </div>
   </section>
 
@@ -48,7 +50,7 @@
 
       <div class="two-col">
         <div>
-          <h2>What You Get — $100</h2>
+          <h2>What You Get — $100 each</h2>
           <p>A 55-gallon HDPE rain barrel, fully assembled and ready to install. Each barrel ships with everything you need:</p>
           <ul class="feature-list">
             <li>✅ 55-gallon HDPE plastic drum (UV-resistant, weatherproof, non-leaching)</li>
@@ -159,11 +161,13 @@
   </section>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Mikjaw Heavy Industries LLC, DBA Mikjaw Kettle Corn. All rights reserved.</p>
+    <p><span id="copy-year"></span> Mikjaw Heavy Industries LLC, DBA Mikjaw Kettle Corn. All rights reserved.</p>
     <p>Wichita, Kansas &mdash; delivering within Kansas</p>
+    <p><a href="https://www.facebook.com/people/Mikjaws-Kettle-Corn/61580975832436/" target="_blank" style="color: var(--cream-dark); text-decoration: underline;">Follow us on Facebook</a></p>
   </footer>
 
   <script src="nav.js"></script>
   <script src="lightbox.js"></script>
+  <script>document.getElementById('copy-year').textContent = '© ' + new Date().getFullYear();</script>
 </body>
 </html>
