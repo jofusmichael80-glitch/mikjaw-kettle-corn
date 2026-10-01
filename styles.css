@@ -165,6 +165,7 @@ nav a:hover, nav a.active {
 .page-hero--corn   { background: linear-gradient(135deg, #3b2a1a, #6b4226); }
 .page-hero--barrel { background: linear-gradient(135deg, #1a3b2a, #265e42); }
 .page-hero--contact { background: linear-gradient(135deg, #2a1a3b, #42266b); }
+.page-hero--gift { background: linear-gradient(135deg, #8b4513, #d2691e); }
 .page-hero-content h1 {
   font-size: clamp(2rem, 4vw, 2.8rem);
   color: var(--gold-light);
@@ -525,3 +526,241 @@ nav a:hover, nav a.active {
 .news-post-date { font-size: 0.82rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.05em; }
 .news-post-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--brown-dark); margin: 0.25rem 0; }
 .news-post-body p { color: var(--text-mid); margin-bottom: 0.75rem; }
+
+/* =========================================
+   Gifting Page — Gift Bundle Styles
+   ========================================= */
+
+/* --- Gifting Intro Section --- */
+.gifting-intro { padding: 3rem 1.5rem; }
+.gifting-intro-box {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--gold);
+}
+.intro-text {
+  color: var(--text-mid);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* --- Gift Bundle Cards Grid --- */
+.gift-bundle-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+/* --- Individual Gift Bundle Card --- */
+.gift-bundle-card {
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  position: relative;
+}
+.gift-bundle-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+/* --- Featured/Most Popular Card --- */
+.gift-bundle-card--featured {
+  border-color: var(--gold);
+  transform: scale(1.02);
+}
+.gift-bundle-card--featured:hover {
+  transform: scale(1.02) translateY(-6px);
+}
+
+/* --- Bundle Badge --- */
+.bundle-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--gold);
+  color: var(--brown-dark);
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+/* --- Bundle Image Placeholder --- */
+.bundle-image-placeholder {
+  height: 200px;
+  background: linear-gradient(135deg, var(--cream-dark), #e8d7c3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  flex-shrink: 0;
+}
+
+/* --- Bundle Body Content --- */
+.bundle-body {
+  padding: 2rem 1.75rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Bundle Name --- */
+.bundle-name {
+  font-size: 1.4rem;
+  color: var(--brown-dark);
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* --- Bundle Price --- */
+.bundle-price {
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: var(--green);
+  margin-bottom: 0.25rem;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* --- Bundle Contents --- */
+.bundle-contents {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* --- Bundle Description --- */
+.bundle-description {
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* --- Bundle Subtext --- */
+.bundle-subtext {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* --- Why Gift Section Highlights --- */
+.why-gift-box {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--gold);
+}
+.why-gift-box p {
+  color: var(--text-mid);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.why-gift-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.highlight-item {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  border-top: 3px solid var(--gold);
+}
+.highlight-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.highlight-item h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  color: var(--brown-dark);
+  margin-bottom: 0.5rem;
+}
+.highlight-item p {
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* --- Shipping Info Box --- */
+.shipping-info {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--green);
+  text-align: center;
+}
+.shipping-info p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+.shipping-info p:last-child { margin-bottom: 0; }
+.shipping-info a { color: var(--brown-mid); font-weight: 700; }
+.shipping-info a:hover { color: var(--gold); }
+
+/* --- Responsive: Gifting Page --- */
+@media (max-width: 768px) {
+  .gift-bundle-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .gift-bundle-card--featured {
+    transform: scale(1);
+  }
+  .gift-bundle-card--featured:hover {
+    transform: translateY(-6px);
+  }
+  .bundle-badge {
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 0.72rem;
+    padding: 0.35rem 0.75rem;
+  }
+  .bundle-body {
+    padding: 1.5rem;
+  }
+  .bundle-name { font-size: 1.25rem; }
+  .bundle-price { font-size: 1.6rem; }
+  .why-gift-highlights {
+    grid-template-columns: 1fr;
+  }
+  .gifting-intro-box {
+    padding: 1.5rem;
+  }
+  .why-gift-box {
+    padding: 1.5rem;
+  }
+  .shipping-info {
+    padding: 1.5rem;
+  }
+}
